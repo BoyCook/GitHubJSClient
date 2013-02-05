@@ -1,6 +1,6 @@
 {
-    "name":"twitter-js-client",
-    "description":"Twitter JS Client",
+    "name":"github-js-client",
+    "description":"GitHub JS Client",
     "version":"0.0.1",
     "private":true,
     "directories" : { "lib": "./lib" },
