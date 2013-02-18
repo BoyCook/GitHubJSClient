@@ -2,7 +2,6 @@ var GitHub = require('../../lib/github').GitHub;
 
 describe('GitHub', function () {
     var gitHub;
-
     var error = function (err, response, body) {
         console.log('ERROR [%s]', err);
         done();
