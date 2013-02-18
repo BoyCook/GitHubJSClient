@@ -3,8 +3,8 @@ var GitHub = require('../../lib/github').GitHub;
 describe('GitHub', function () {
     var gitHub;
 
-    var error = function (code, data) {
-        console.log('ERROR [%s]', code);
+    var error = function (err, response, body) {
+        console.log('ERROR [%s]', err);
         done();
     };
 
@@ -17,7 +17,7 @@ describe('GitHub', function () {
     it('should get users repos', function (done) {
         gitHub.getUsersRepos('BoyCook', error,
             function (data) {
-                expect(data.length).toEqual(27);
+                expect(data.length).toEqual(28);
                 done();
             }
         );
