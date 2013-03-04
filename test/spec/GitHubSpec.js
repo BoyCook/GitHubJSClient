@@ -16,7 +16,7 @@ describe('GitHub', function () {
     it('should get users repos', function (done) {
         gitHub.getUsersRepos('BoyCook', error,
             function (data) {
-                expect(data.length).toEqual(28);
+                expect(JSON.parse(data).length).toEqual(28);
                 done();
             }
         );
@@ -25,7 +25,7 @@ describe('GitHub', function () {
     it('should get users gists', function (done) {
         gitHub.getUsersGists('BoyCook', error,
             function (data) {
-                expect(data.length).toEqual(5);
+                expect(JSON.parse(data).length).toEqual(7);
                 done();
             }
         );
